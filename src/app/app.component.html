@@ -1,20 +1,93 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div id='content_container'>
 
+  <div id='top'>
+    <div id='top-content'>
+
+      <div id='header_nav'>
+        <div id='back_nav'>
+          <div class='back_nav_left'>
+            <div id='back_arrow_container'>
+              <img class='back_arrow_img' src='assets/icons/back-arrow.png'>
+            </div>
+          </div>
+          <div class='back_nav_middle'>
+            <p>Lesson Builder</p>
+          </div>
+          <div class='back_nav_right'>
+            <div class='cancel_btn_container'><p>Cancel</p></div>
+            <div class='save_btn_container'><p>Save</p></div>
+          </div>
+        </div>
+        <div class='lesson_info_header'>
+          <div class='lesson_info_left'>
+            <p>Lesson Title</p>
+          </div>
+          <div class='lesson_info_right'>
+            <div class='subject_container'><p>Math</p></div>
+            <div class='grade_lv_container'><p>Grade 1</p></div>
+          </div>
+        </div>
+        <div class='standards_header'></div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div id='middle'>
+
+    <div id='content'>
+      <div id='min_max_btn_container'>
+        <div id='min_max_btn'>
+          <img src='assets/icons/{{contentMode}}.svg'>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div id='bottom'>
+    <div id='bottom-content'>
+
+
+      <div id='footer_tabs_container'>
+        <div class='tab_select_container'>
+          <div class='tab_container'>
+            <div class='tab' (click)='tabSelection("catalog")' [ngClass]="{'selected_blue': option == 'catalog'}"><p>Catalog</p></div>
+          </div>
+          <div class='tab_container'>
+            <div class='tab' (click)='tabSelection("homework")' [ngClass]="{'selected_blue': option == 'homework'}"><p>Homework</p></div>
+          </div>
+          <div class='tab_container'>
+            <div class='tab' (click)='tabSelection("clicker")' [ngClass]="{'selected_blue': option == 'clicker'}"><p>Clicker</p></div>
+          </div>
+          <div class='tab_container'>
+            <div class='tab' (click)='tabSelection("media")' [ngClass]="{'selected_blue': option == 'media'}"><p>Media</p></div>
+          </div>
+        </div>
+        <div class='selector_window_container'>
+          <div class='add_btn_container'>
+            <div class='add_btn'>
+              <div class='add_icon_container'>
+                <img src='assets/icons/add.svg'> 
+              </div>
+            </div>
+          </div>
+          <div class='selector_scroll'>
+            <div class='resource_container' *ngFor='let resource of selected_resources; let i = index;'>
+              <div class='resource'>
+                <div class='remove_btn' (click)="removeResource(i)">
+                  <img src='assets/icons/remove.svg'>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>

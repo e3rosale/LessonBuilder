@@ -1,0 +1,164 @@
+#top_menu_container {
+  width: 100%;
+  height: 140px;
+  border: 1px solid red;
+  background-image: linear-gradient(0deg, #8deae8 0%, #0a8dca 100%, #0a8dca 100%);
+}
+
+#top_menu_content_container {
+  width: 100%;
+  height: 100px;
+  /* background-color: red; */
+  display: flex;
+}
+
+#profile_content_container {
+  width: 35%;
+  height: 100%;
+  /* background-color: white; */
+}
+
+#profile_content {
+  width: 260px;
+  max-width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+}
+
+#profile_image_block {
+  width: 100px;
+  height: 100%;
+  /* background-color: white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+#circle_square {
+  width: 80px;
+  height: 80px;
+  /* border: 1px solid black; */
+}
+
+#profile_img_circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+#profile_img_circle img {
+  width: 100%;
+}
+
+#menu_arrow_container {
+  width: 20px;
+  height: 20px;
+  border:1px solid #ffffff;
+  border-radius: 50%;
+  background:#40b4e5;
+  position: relative;
+  bottom: 24px;
+  left: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu_arrow {
+  width: 10px;
+  height: 7px;
+  transform:rotate(180deg);
+  /* position: relative; */
+}
+
+#name_school_text_container {
+  width: calc(100% - 100px);
+  height: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+}
+
+#profile_text_container {
+  width: 100%;
+  height: 60px;
+  /* border: 1px solid red; */
+  white-space: nowrap;
+}
+
+#profile_text_top {
+  width: 100%;
+  height: 50%;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+
+#profile_text_top p {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
+
+#profile_text_bottom {
+  width: 100%;
+  height: 50%;
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+
+#profile_text_bottom p {
+  margin: 0;
+  color: #e7e7e7;
+  font-size: 20px;
+}
+
+#top_menu_content_title {
+  width: 30%;
+  height: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#top_menu_content_title p {
+  font-size: 32px;
+  color: white;
+  /* font-weight: 600; */
+}
+
+#top_menu_button_container {
+  width: 35%;
+  height: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+#top_menu_button {
+  width: 40px;
+  height: 100%;
+  /* border: 1px solid black; */
+  display: flex; 
+  align-items: center;
+  margin-right: 30px;
+}
+
+#top_menu_button img {
+  width: 100%;
+}
+
+#search_content_container {
+  width: 100%;
+  height: 40px;
+  /* background-color: blue; */
+  background-color: #eceff4;
+}
+
